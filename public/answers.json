@@ -1,0 +1,35 @@
+[
+    {
+        "answer": "As I see it, yes",
+        "color": "blue"
+    }, 
+    {
+        "answer": "Ask again later",
+        "color": "blue"    
+    },
+    {
+        "answer": "Better not tell you now",
+        "color": "blue"
+    }, 
+    {
+        "answer":"Concentrate and ask again",
+        "color": "blue"
+    }, 
+    {
+        "answer":" Don’t count on it",
+        "color": "blue"
+    }, 
+    {
+        "answer": "It is certain",
+        "color": "blue"
+    }, 
+    {
+        "answer": "Most likely",
+        "color": "blue"
+    },
+    {
+        "answer": "No way",
+        "color": "orange"
+    }
+
+]
