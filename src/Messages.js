@@ -32,7 +32,7 @@ export const messageData = [
         "color": "orange"
     },
     {
-        "answer": "All signs point to ye",
+        "answer": "All signs point to yes",
         "color": "blue"
     },
     {
