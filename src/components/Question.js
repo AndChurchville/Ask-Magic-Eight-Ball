@@ -15,24 +15,23 @@ const Question = ({ getMessage }) => {
 
   return (
     <>
-      <form onSubmit={getAnswer}>
-        <label>Ask Me Anything</label>
+      <QuestionForm onSubmit={getAnswer}>
         <UserAsk
           value={question}
-          placeholder="Will I win the lottery?"
+          placeholder=" ex.Will I win the lottery?"
           onChange={(e) => {
             setQuestion(e.target.value);
           }}
         />
-        <SubmitBtn type="submit">Ask</SubmitBtn>
-      </form>
+        <SubmitBtn type="submit">Ask me!</SubmitBtn>
+      </QuestionForm>
     </>
   );
 };
 
+const QuestionForm = styled.form``;
 const UserAsk = styled.input`
   display: block;
-  width: 100%;
   padding: 10px;
   margin: 8px 0;
   border: 0;
@@ -44,9 +43,12 @@ const UserAsk = styled.input`
 const SubmitBtn = styled.button`
   width: 100%;
   padding: 10px;
+  margin-top: 10px;
   border: none;
   border-radius: 5px;
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   background-color: purple;
 `;
 export default Question;
