@@ -1,49 +1,39 @@
 import "./App.css";
-import Character from "./components/Character";
 import Prediction from "./components/Prediction";
 import styled from "styled-components";
+import { color } from "./styles";
+import eightball from "./assets/chara-img.svg";
 
 function App() {
   return (
     <>
       <Container>
-        <Frame>
-          {" "}
-          <Header>Hello Magic Eight Ball!</Header>
-          <Character />
-          <Prediction />
-        </Frame>
+        <Header>Hello Magic Eight Ball</Header>
+        <ImageWrapper>
+          <img src={eightball} alt="character" />
+        </ImageWrapper>
+        <Prediction />
       </Container>
     </>
   );
 }
 
+const { darkPurple, olive } = color;
+
 const Container = styled.div`
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-color: ${darkPurple};
   height: 100vh;
-  background-color: purple;
 `;
-
-const Header = styled.div`
-  width: 100%;
+const Header = styled.h1`
+  color: ${olive};
   font-family: "Megrim", sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-  color: lightgreen;
 `;
-
-const Frame = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  background-color: #0c1b33;
-  font-family: "Poppins", sans-serif;
+const ImageWrapper = styled.div`
+  width: 240px;
+  height: auto;
+  object-fit: contain;
 `;
-
 export default App;

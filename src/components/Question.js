@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { breakpoint } from "../styles";
 
 //User will type in a question
 const Question = ({ getMessage }) => {
@@ -29,15 +30,27 @@ const Question = ({ getMessage }) => {
   );
 };
 
-const QuestionForm = styled.form``;
+const { medium } = breakpoint;
+
+const QuestionForm = styled.form`
+  display: block;
+  @media (min-width: ${medium}px) {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+`;
 const UserAsk = styled.input`
   display: block;
   padding: 10px;
   margin: 8px 0;
+  width: 200px;
+  height: 20px;
   border: 0;
   border-bottom: 1px solid #eee;
   border-radius: 5px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  text-align: center;
 `;
 
 const SubmitBtn = styled.button`
@@ -48,7 +61,19 @@ const SubmitBtn = styled.button`
   border-radius: 5px;
   color: white;
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
   font-size: 1rem;
-  background-color: purple;
+  background-color: #9fc087;
+  cursor: pointer;
+  &:hover {
+    background-color: #c9dcbc;
+    color: #230c33;
+  }
+
+  @media (min-width: ${medium}px) {
+    padding: 10px;
+    margin: 8px 0 0 15px;
+    height: 40px;
+  }
 `;
 export default Question;

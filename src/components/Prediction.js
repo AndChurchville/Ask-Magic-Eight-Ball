@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { messageData } from "../Messages";
 import Question from "./Question";
 import styled from "styled-components";
+import { breakpoint } from "../styles";
 
 // Magic 8-ball's answers will show up in a speech bubble
 const Prediction = ({ question }) => {
@@ -16,38 +17,54 @@ const Prediction = ({ question }) => {
 
   const getMessage = (e) => {
     e.preventDefault();
-    // eslint-disable-next-line no-sequences
+
     return setMessage(randomMsg), setBubbleVisibility(true);
   };
 
   return (
     <>
-      {bubbleVisbility ? (
-        <AnswerBlock
-          style={{
-            "--color": message.color,
-          }}
-        >
-          <h1>{message.answer}</h1>
-        </AnswerBlock>
-      ) : null}
-      <ContainerQuestion>
-        <Question getMessage={getMessage} />
-      </ContainerQuestion>
+      <PredictionContainer>
+        {bubbleVisbility ? (
+          <AnswerBlock
+            style={{
+              "--color": message.color,
+            }}
+          >
+            <h1>{message.answer}</h1>
+          </AnswerBlock>
+        ) : null}
+
+        <ContainerQuestion>
+          <Question getMessage={getMessage} />
+        </ContainerQuestion>
+      </PredictionContainer>
     </>
   );
 };
 
+const { medium } = breakpoint;
+
+const PredictionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: ${medium}px) {
+    width: 300px;
+  }
+`;
+
 const AnswerBlock = styled.div`
-  width: 100%;
   padding: 10px;
   margin-top: 20px;
   text-align: center;
   font-size: 0.5rem;
   background: var(--color, gray);
+  width: 100%;
 
   h1 {
-    color: black;
+    color: #0c1b33;
   }
 `;
 
