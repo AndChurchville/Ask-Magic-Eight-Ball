@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ask-,magic-eight-ball/static/css/main.78c6e4fe.chunk.css",
+    "main.js": "/ask-,magic-eight-ball/static/js/main.14d66639.chunk.js",
+    "main.js.map": "/ask-,magic-eight-ball/static/js/main.14d66639.chunk.js.map",
+    "runtime-main.js": "/ask-,magic-eight-ball/static/js/runtime-main.750b2ac0.js",
+    "runtime-main.js.map": "/ask-,magic-eight-ball/static/js/runtime-main.750b2ac0.js.map",
+    "static/js/2.c9b6cb2c.chunk.js": "/ask-,magic-eight-ball/static/js/2.c9b6cb2c.chunk.js",
+    "static/js/2.c9b6cb2c.chunk.js.map": "/ask-,magic-eight-ball/static/js/2.c9b6cb2c.chunk.js.map",
+    "index.html": "/ask-,magic-eight-ball/index.html",
+    "static/css/main.78c6e4fe.chunk.css.map": "/ask-,magic-eight-ball/static/css/main.78c6e4fe.chunk.css.map",
+    "static/js/2.c9b6cb2c.chunk.js.LICENSE.txt": "/ask-,magic-eight-ball/static/js/2.c9b6cb2c.chunk.js.LICENSE.txt",
+    "static/media/chara-img.4fe792b6.svg": "/ask-,magic-eight-ball/static/media/chara-img.4fe792b6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.750b2ac0.js",
+    "static/js/2.c9b6cb2c.chunk.js",
+    "static/css/main.78c6e4fe.chunk.css",
+    "static/js/main.14d66639.chunk.js"
+  ]
+}
