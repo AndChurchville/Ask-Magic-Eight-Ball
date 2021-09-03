@@ -2,6 +2,8 @@
 
 ## Work in Progress
 
+[Magic Eight Ball Demo](https://andchurchville.github.io/Ask-Magic-Eight-Ball/)
+
 My favorite hobby is drawing and art in general. I love drawing portraits and creating characters. Especially weird ones. Honestly there was a time I wanted to be a character designer. One character I usually draw is a human character with a magic eight ball for a head.
 
 So I decided to practice my front-end and illustration skills by creating this simple fortune telling app.
